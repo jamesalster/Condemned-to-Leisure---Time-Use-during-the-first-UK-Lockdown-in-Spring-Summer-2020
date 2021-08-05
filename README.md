@@ -1,5 +1,5 @@
 # Condemned To Leisure: UK Time Use in Lockdown 2020
- Online Code and Appendices for M2 dissertation of James Alster, submitted to the EHESS 2021
+ Online Code and Appendices for M2 dissertation of James Alster, submitted to the EHESS in autumn 2021.
 
 Appendix C is provided as an .odt document.
 
@@ -93,6 +93,3 @@ loaded via a namespace (and not attached):
 [118] parallel_4.0.5       hms_1.0.0            grid_4.0.5          
 [121] rpart_4.1-15         coda_0.19-4          minqa_1.2.4         
 [124] shiny_1.6.0          base64enc_0.1-3      dygraphs_1.1.1.6 
-
-=======
->>>>>>> parent of f5cd7b1 (Appendix C and Code Appendix to M2 dissertation submitted to EHESS 2021)
