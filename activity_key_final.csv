@@ -1,0 +1,39 @@
+original_level,pri_tidied,activity_group
+Sleeping,Sleeping,rest_sleep
+Resting,Resting,rest_rest
+"Washing, dressing","Washing, dressing",rest_selfcare
+"Eating, drinking,home or work","Eating or drinking, (home or work)",rest_eat
+"Preparing food, cooking etc","Preparing food, cooking etc.",unpaid_work_house
+Cleaning tidying housework,"Cleaning, tidying, housework",unpaid_work_house
+"Clothes washing, mending","Clothes washing, mending",unpaid_work_house
+"Maintenance diy, etc","Maintenance, DIY, etc.",unpaid_work_house
+Consuming services,Consuming services,leisure_outside
+"church,temple,synagogue,prayer","Church, Temple, Synagogue, Prayer",leisure_social
+"walking, Jogging","Walking, Jogging",leisure_outside
+travel: cycle,Travel by bike,travel
+Travel by car,Travel by car,travel
+"Travel by bus,tram","Travel by bus,tram",travel
+"Travel by train,tube","Travel by train,tube",travel
+Travel other,"Travel, other",travel
+Paid work including at home,Paid work including at home,work
+Formal education,Formal education,study
+Recreational courses,Recreational courses,leisure_study
+Voluntary work for organisation,Voluntary work for organisation,unpaid_work_org
+Caring for own child,Caring for own child,unpaid_work_childcare
+Caring for other children,Caring for other children,unpaid_work_childcare
+"Help,caring for cores adult","Help, caring for coresident adult",unpaid_work_care
+"Help,caring for noncoresidents","Help, caring for non-coresident",unpaid_work_care
+"Work,study break",Work or study break,rest_break
+"Shopping,bank etc incl internet","Shopping, bank etc, incl. online",shopping
+"Watching tv,video,dvd,music","Watching tv, video, dvd, music",leisure_media
+Reading including e-books,Reading including e-books,leisure_reading
+"Playing sports, exercise","Playing sports, exercise",leisure_exercise
+"Going out to eat, drink","Going out to eat, drink",leisure_social
+"Walking,dog walking","Walking, dog walking",leisure_outside
+Playing computer gamesm,Playing computer games,leisure_computergame
+"Ttime with friends,family","Time with friends,family",leisure_social
+"Telephone,text,email,letters","Telephone, text, email, letters",comms
+"Cinema,theatre,sport etc","Cinema, theatre, sport etc.",leisure_culture
+Hobbies,Hobbies,leisure_hobbies
+write-in other,write-in other,other
+138,138,other

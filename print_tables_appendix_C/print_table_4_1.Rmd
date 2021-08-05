@@ -1,0 +1,23 @@
+---
+title: "Print Table 4.1"
+author: "James Alster"
+date: "27/07/2021"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(knitr)
+knitr::opts_chunk$set(echo = TRUE)
+```
+```{r table_2_1}
+table_2_1 <- read_rds("../table_2_1.rds") 
+kable(table_2_1, caption = "Table 2.1")
+
+```
+```{r table 4_1}
+table_4_1 <- read_rds("../table_4_1.rds") %>%
+  rename("Mean Entropy as % of Max Entropy" = "% prop_max_H") %>%
+  rename_with(str_to_title) 
+kable(table_4_1, caption = "Table 4.1")
+```

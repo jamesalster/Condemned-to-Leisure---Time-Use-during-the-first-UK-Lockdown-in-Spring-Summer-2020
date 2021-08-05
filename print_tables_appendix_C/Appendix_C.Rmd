@@ -1,0 +1,61 @@
+---
+title: "Appendix_2"
+author: "James Alster"
+date: "05/07/2021"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(brms)
+library(knitr)
+knitr::opts_chunk$set(echo = FALSE)
+options(width = 300)
+```
+
+```{r functions}
+
+process_title <- function(filename) {
+  filename %>%
+    str_remove("\\.rds") %>%
+    str_replace("_", " ") %>%
+    str_replace("_", ".") %>%
+    str_replace("_", ".") %>%
+    str_to_title()
+}
+
+process_ranef <- function(brmsfit) {
+  ranef <- tryCatch(ranef(brmsfit), 
+                    error = function(e) return(data.frame(effects = "No Group Level Effects")))
+  ranef %>%
+      as.data.frame() %>%
+      mutate(across(where(is.numeric), ~ round(., 3))) %>%
+      rename_with(~ str_extract(., "[QE].*$"), .cols = matches("\\.")) %>%
+    return()
+}
+
+print_row <- function(title, summary, ranef) {
+  print(str_glue("\n\n-----  {title} -----\n\n"))
+  print(summary)
+  print(str_glue("\n\nGroup Level Effects: {title}\n\n"))
+  print(as.data.frame(ranef))
+}
+
+```
+
+```{r print_appendix}
+
+models <- tibble(filename = list.files("../cache")) %>%
+  mutate(model = map(filename, ~ read_rds(file.path("../cache", .))))
+
+
+processed_models <- models %>%
+  transmute(title = process_title(filename),
+         summary = map(model, ~summary(., priors = TRUE)),
+         ranef = map(model, process_ranef))
+
+processed_models %>%
+  rowwise() %>%
+  summarise(print_row(title, summary, ranef), .groups = "drop") 
+````  
+
