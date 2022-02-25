@@ -1,6 +1,7 @@
 # Condemned To Leisure: UK Time Use in Lockdown 2020
  Online Code and Appendices for M2 dissertation of James Alster, submitted to the EHESS in autumn 2021.
 
+The dissertation itself can be found in folder Dissertation/ .
 Appendix C is provided as an .odt document.
 
 # Instructions to reproduce the analysis: 
@@ -25,7 +26,7 @@ Folders cache/ and data/ are intentionally empty, they store objects created in 
 
 Stan Version: 2.12.0
 
-Output of sessioninfo(): 
+# Output of sessioninfo(): 
 
 R version 4.0.5 (2021-03-31)
 Platform: x86_64-w64-mingw32/x64 (64-bit)
